@@ -1,0 +1,54 @@
+/*****************************
+HOME
+*****************************/
+
+#home {
+	background: url(../images/cover.jpg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+		 -o-background-size: cover;
+			background-size: cover;
+}
+
+.overlay {
+    background-image: url("../images/pattern.png");
+	height: 100%;
+	width: 100%;
+    position: absolute;
+    background-repeat: repeat;
+}
+
+.intro {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+	color: #DDD;
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+}
+
+.arrow {
+	height: 50px;
+	margin-top: 10%;
+}
+
+
+
+/*****************************
+MEDIA QUERIES
+*****************************/
+	
+	/* Home
+	==========*/
+
+	@media (min-width: 769px) {
+
+		.intro {
+			top: 37%;
+		}
+
+	}
