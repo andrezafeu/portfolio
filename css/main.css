@@ -2,7 +2,8 @@
 HOME
 *****************************/
 
-body {
+body,
+#backend-content {
 	background-color: #EEE;
 }
 
@@ -36,7 +37,7 @@ body {
 	margin: 10% 0;
 }
 
-.secondary-content {
+#secondary-content {
 	width: 100%;
 	margin: 3% 0;
 	text-align: center;
@@ -60,7 +61,62 @@ body {
 
 .line {
 	background: rgba(100, 100, 100, 0.5);
-	width: 150px;
+	width: 130px;
 	height: 2px;
 	margin: 30px auto;
+}
+
+footer {
+	background-color: #222;
+	color: #DDD;
+	text-align: center;
+}
+
+p {
+	line-height: 50px;
+}
+
+/*a,
+a:hover {
+	color: inherit;
+
+}
+
+a:hover {
+	text-decoration: none;
+	text-decoration-color: none;
+}*/
+
+/*****************************
+PORTFOLIO INFO ON HOME PAGE
+*****************************/
+
+#frontend-content,
+#fullstack-content {
+	background-color: #ddd;
+}
+
+#frontend-content,
+#backend-content,
+#fullstack-content	 {
+	text-align: center;
+	/*margin: 0;*/
+	padding-top: 2%;
+	width: 100%;
+	color: #666;
+}
+
+#frontend-gallery,
+#backend-gallery,
+#fullstack-gallery {
+	padding: 5%;
+}
+
+.portfolio-list li {
+	list-style: none;
+}
+
+.portfolio-list li img {
+	width: 100%;
+	margin-bottom: 7%;
 }
