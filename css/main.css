@@ -76,16 +76,17 @@ p {
 	line-height: 50px;
 }
 
-/*a,
+a,
 a:hover {
 	color: inherit;
 
 }
 
-a:hover {
+/*a:hover {
 	text-decoration: none;
 	text-decoration-color: none;
-}*/
+}
+*/
 
 /*****************************
 PORTFOLIO INFO ON HOME PAGE
@@ -100,7 +101,6 @@ PORTFOLIO INFO ON HOME PAGE
 #backend-content,
 #fullstack-content	 {
 	text-align: center;
-	/*margin: 0;*/
 	padding-top: 2%;
 	width: 100%;
 	color: #666;
@@ -112,11 +112,87 @@ PORTFOLIO INFO ON HOME PAGE
 	padding: 5%;
 }
 
-.portfolio-list li {
-	list-style: none;
-}
-
-.portfolio-list li img {
+.portfolio-list figure img {
 	width: 100%;
 	margin-bottom: 7%;
+	display: block;
+}
+
+/*** IMAGE OVERLAY ***/
+
+.portfolio-list figure {
+	position: relative;
+}
+
+.portfolio-list figure figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+figure.image-overlay {
+	background: rgb(0, 0, 0);
+}
+
+figure.image-overlay img {
+	opacity: 0.7;
+	transition: opacity 0.4s;
+	-webkit-transition: opacity 0.4s;
+}
+
+figure.image-overlay:hover img {
+	opacity: 0.4;
+}
+
+figure.image-overlay figcaption::before,
+figure.image-overlay figcaption::after {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	content: '';
+	border: 1px solid #fff;
+	transform: scale(1,0);
+	-webkit-transform: scale(1,0);
+	transition: opacity 0.4s, transform 0.4s;
+	-webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+}
+
+figure.image-overlay:hover figcaption::before,
+figure.image-overlay:hover figcaption::after {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+.portfolio-list figure h2,
+.portfolio-list figure h4 {
+	margin: 0;
+    color: #fff;
+}
+
+figure.image-overlay h2 {
+	padding-top: 10%;
+	transition: transform 0.4s;
+	-webkit-transition: -webkit-transform 0.4s;
+	transform: translate3d(0,-15px,0);
+	-webkit-transform: translate3d(0,-15px,0);
+}
+
+figure.image-overlay h4 {
+	padding: 20px 2.5em;
+	opacity: 0;
+	transition: opacity 0.4s, transform 0.4s;
+	-webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
+	transform: translate3d(0,25px,0);
+	-webkit-transform: translate3d(0,25px,0);
+}
+
+figure.image-overlay:hover h2,
+figure.image-overlay:hover h4 {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
 }
