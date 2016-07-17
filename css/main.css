@@ -99,7 +99,8 @@ PORTFOLIO INFO ON HOME PAGE
 
 #frontend-content,
 #backend-content,
-#fullstack-content	 {
+#fullstack-content,
+#personal-info-content	 {
 	text-align: center;
 	padding-top: 2%;
 	width: 100%;
@@ -212,4 +213,14 @@ MODALS
 
 button.close {
 	padding: 7px;
+}
+
+/*****************************
+PROFILE
+*****************************/
+
+.profile-image {
+	width: 95%;
+	max-width: 300px;
+	margin: 5%;
 }
