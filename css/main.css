@@ -196,3 +196,20 @@ figure.image-overlay:hover h4 {
 	transform: translate3d(0,0,0);
 	-webkit-transform: translate3d(0,0,0);
 }
+
+/*****************************
+MODALS
+*****************************/
+
+.modal-header {
+	background-color: #55BCBC;
+}
+
+.modal-title {
+	color: #FDFDFD;
+	letter-spacing: 1px;
+}
+
+button.close {
+	padding: 7px;
+}
