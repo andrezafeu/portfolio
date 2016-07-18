@@ -70,10 +70,11 @@ footer {
 	background-color: #222;
 	color: #DDD;
 	text-align: center;
+	padding-bottom: 10px;
 }
 
 p {
-	line-height: 50px;
+	line-height: 2em;
 }
 
 a,
@@ -82,11 +83,10 @@ a:hover {
 
 }
 
-/*a:hover {
+a:hover {
 	text-decoration: none;
-	text-decoration-color: none;
 }
-*/
+
 
 /*****************************
 PORTFOLIO INFO ON HOME PAGE
